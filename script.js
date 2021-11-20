@@ -3,9 +3,8 @@ const nav = document.querySelector('.navbar');
 var picture_lyrics = document.getElementById('picture-lyrics');
 var tempvalue = picture_lyrics.innerText;
 var lyrics = document.getElementById('lyrics')
-var repitition = document.getElementById('repitition');
-var lyrics = document.getElementById('lyrics')
-var n = 85;
+var repitition = document.getElementById('repitition'); 
+var n = 170;
 const save = document.querySelector('#save'); 
 var file = document.getElementById("picture");
 var gray= document.getElementById('gray');
@@ -31,6 +30,7 @@ function repeatLyrics(n) {
     }
 }
 function change_lyrics() {
+    tempvalue=lyrics.value;
     picture_lyrics.innerText = lyrics.value;
     repeatLyrics(n);
 }
