@@ -3,7 +3,7 @@ const nav = document.querySelector('.navbar');
 var picture_lyrics = document.getElementById('picture-lyrics');
 var tempvalue = picture_lyrics.innerText;
 var lyrics = document.getElementById('lyrics')
-var repitition = document.getElementById('repitition'); 
+var repetition = document.getElementById('repetition'); 
 var n = 170;
 const save = document.querySelector('#save'); 
 var file = document.getElementById("picture");
@@ -34,12 +34,12 @@ function change_lyrics() {
     picture_lyrics.innerText = lyrics.value;
     repeatLyrics(n);
 }
-function removeRepitition() {
+function removeRepetition() {
     picture_lyrics.innerText = tempvalue;
 }
 function change_n() {
-    n = repitition.value;
-    removeRepitition();
+    n = repetition.value;
+    removeRepetition();
     repeatLyrics(n);
 }
 
@@ -49,7 +49,7 @@ menu.addEventListener('click', change);
 // save.addEventListener('click', change);
 // file.addEventListener('change', readURL, true);
 // lyrics.addEventListener('change', change_lyrics);
-// repitition.addEventListener('change', change_n);
+// repetition.addEventListener('change', change_n);
 
 
 
